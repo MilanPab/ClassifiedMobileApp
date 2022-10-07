@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.classifiedappmain">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,51 +16,48 @@
         android:theme="@style/Theme.ClassifiedAppMain"
         tools:targetApi="31">
         <activity
+            android:name=".postyourbusiness"
+            android:exported="false" />
+        <activity
+            android:name=".listarchive"
+            android:exported="false" />
+        <activity
+            android:name=".blogsingleitem_layout"
+            android:exported="false" />
+        <activity
             android:name=".Getstarted"
-            android:exported="false">
-
-
-        </activity>
-<activity android:name=".RegistrationPage"
-    android:exported="false">
-</activity>
-
-        <activity android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationPage"
+            android:exported="false" />
+        <activity
+            android:name=".login"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".Language"
             android:exported="false" />
         <activity
             android:name=".Dashboard"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".Aboutus"
-            android:exported="false" >
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".Contactus"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".categoryLayout"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-
-
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>
