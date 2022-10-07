@@ -1,5 +1,6 @@
 package com.example.classifiedappmain;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -17,8 +18,10 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
+    private FirebaseAuth mAuth;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
@@ -37,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mAuth=FirebaseAuth.getInstance();
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -72,6 +76,17 @@ public class MainActivity extends AppCompatActivity {
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
+                    case R.id.nav_logout:
+                        logoutFunction();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.nav_getSupport:
+                        replaceFragment(new fragment_contactus());
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
+
+
 
 
                 }
@@ -97,6 +112,13 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragment_container,fragment);
         fragmentTransaction.commit();
+    }
+    public void logoutFunction(){
+        FirebaseAuth.getInstance().signOut();
+        Toast.makeText(this, "logout successful", Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(MainActivity.this,login.class);
+        startActivity(i);
+        finish();
     }
 
 }
