@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.classifiedappmain.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     NavigationView navigationView;
     Toolbar toolbar;
     ActionBarDrawerToggle actionBarDrawerToggle;
+    ActivityMainBinding binding;
+
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -38,7 +41,27 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        replaceFragment(new HomeFragment());
+
+
+        binding.bottomnavigationview.setOnItemSelectedListener(item -> {
+
+            switch (item.getItemId()) {
+                case R.id.home:
+                    replaceFragment(new HomeFragment());
+                    break;
+                case R.id.fav:
+                    replaceFragment(new FavouriteFragment());
+                    break;
+                case R.id.user:
+                    replaceFragment(new UserFragment());
+                    break;
+            }
+
+            return true;
+        });
 
         mAuth=FirebaseAuth.getInstance();
 
@@ -56,12 +79,15 @@ public class MainActivity extends AppCompatActivity {
 
                 switch(item.getItemId()){
                     case R.id.nav_home:
-                        Toast.makeText(MainActivity.this,"Home Selected",Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.nav_post_business:
-                        Log.i("MENU_DRAWER_TAG","Post Business Item is Clicked");
+                        replaceFragment(new HomeFragment());
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
+
+                    case R.id.nav_postbusiness:
+                        replaceFragment(new fragment_postbusiness());
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
 
                     case R.id.nav_categories:
                         replaceFragment(new cataegoryFragments());
@@ -84,7 +110,6 @@ public class MainActivity extends AppCompatActivity {
                         replaceFragment(new fragment_contactus());
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
-
 
 
 

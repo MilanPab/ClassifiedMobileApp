@@ -4,7 +4,7 @@
         <group android:checkableBehavior="single">
 
             <item android:id="@+id/nav_home" android:title="Home" android:icon="@drawable/ic_baseline_home_24"/>
-            <item android:id="@+id/nav_post_business" android:title="Post Business" android:icon="@drawable/postbusiness"/>
+            <item android:id="@+id/nav_postbusiness" android:title="Post Business" android:icon="@drawable/postbusiness"/>
             <item android:id="@+id/nav_categories" android:title="Categories" android:icon="@drawable/category"/>
             <item android:id="@+id/nav_blog" android:title="Blog" android:icon="@drawable/blog"/>
             <item android:id="@+id/nav_language" android:title="Language" android:icon="@drawable/language"/>

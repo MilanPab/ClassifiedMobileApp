@@ -25,6 +25,12 @@
             android:padding="10dp"
             tools:ignore="MissingConstraints">
 
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
             <TextView
                 android:id="@+id/blogTitle"
                 android:layout_width="match_parent"
@@ -33,13 +39,6 @@
                 android:text="MarkJukerBerg is A Youngest Tech EnterPenure From Ameri"
                 android:textColor="@color/Blue_Light"
                 android:textSize="15dp" />
-
-            <TextView
-                android:id="@+id/blogDescription"
-                android:layout_width="match_parent"
-                android:layout_height="21dp"
-                android:text="TextView"
-                android:textSize="10dp" />
 
             <TextView
                 android:id="@+id/pubDate"

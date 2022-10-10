@@ -9,13 +9,17 @@
         <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/drawable/progress_back.xml" value="0.1" />
         <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/layout/activity_aboutus.xml" value="0.12182971014492754" />
         <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/layout/activity_blogsingleitem_layout.xml" value="0.21518987341772153" />
-        <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/layout/activity_category_layout.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/layout/activity_category_layout.xml" value="0.1" />
         <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/layout/activity_listarchive.xml" value="0.184375" />
         <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/layout/activity_login.xml" value="0.5" />
         <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/layout/activity_postyourbusiness.xml" value="0.184375" />
+        <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/layout/activity_postyourbusiness.xml" value="0.22" />
         <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/layout/footer_menu.xml" value="0.4466666666666667" />
-        <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/layout/fragment_favourite.xml" value="0.184375" />
+        <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/layout/fragment_home.xml" value="0.12" />
+        <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/layout/fragment_home1.xml" value="0.12" />
+        <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/layout/fragment_user.xml" value="0.184375" />
+        <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/menu/bottom_navmenu.xml" value="0.184375" />
         <entry key="..\:/Users/nisch/AndroidStudioProjects/ClassifiedAppMain/app/src/main/res/menu/main_menu.xml" value="0.22" />
       </map>
     </option>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <GridLayout
+        android:id="@+id/grid_1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:columnCount="1"
+        android:rowCount="1"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076"
+        tools:ignore="MissingConstraints">
+
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imageslider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            app:iss_auto_cycle="true"
+            app:iss_corner_radius="10"
+            app:iss_delay="10000"
+            app:iss_period="2000"
+            app:iss_title_background="@drawable/gradient" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="377dp"
+        android:columnCount="2"
+        android:padding="10dp"
+        android:rowCount="2"
+        app:layout_constraintTop_toBottomOf="@+id/grid_1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="195dp"
+            android:layout_height="180dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="@color/Green_thin"
+            android:backgroundTint="@color/Green_thin"
+            android:elevation="10dp"
+            android:padding="10dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:src="@drawable/technology"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Tech"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="bottom"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="195dp"
+            android:layout_height="180dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="@color/Green_thin"
+            android:backgroundTint="@color/Green_thin"
+            android:elevation="10dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:src="@drawable/shop"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                android:text="Shop"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="bottom"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="195dp"
+            android:layout_height="180dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="@color/Green_thin"
+            android:backgroundTint="@color/Green_thin"
+            android:elevation="10dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:src="@drawable/cinema"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Cinemas"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="bottom"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="195dp"
+            android:layout_height="180dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="@color/Green_thin"
+            android:backgroundTint="@color/Green_thin"
+            android:elevation="10dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:src="@drawable/cosmetics"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Cosmetics"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="bottom"/>
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+    <Button
+        android:layout_width="206dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="Explore More"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
